@@ -2,12 +2,12 @@ import React from 'react';
 import {Navbar,NavDropdown,Nav,Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../assets/img/logoVagon.png';
-// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import {FaShoppingCart} from 'react-icons/fa';
 
 
 function Bar() {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="md">
             <Container>
             <Navbar.Brand href="#home">
                 <img
@@ -19,7 +19,7 @@ function Bar() {
                 />{' '}
             </Navbar.Brand>
             <Navbar.Brand href="#home">Un Vagon de Ideas</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />                
+            <Navbar.Toggle aria-controls="basic-navbar-nav"/>                
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto container justify-content-end">
                     <Nav.Link href="#home">Home</Nav.Link>
@@ -29,6 +29,9 @@ function Bar() {
                         <NavDropdown.Item href="#action/3.2">Kids</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Kitchen</NavDropdown.Item>
                     </NavDropdown>
+                    <Nav.Link href="#home">
+                        <FaShoppingCart size={22}/>
+                    </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             </Container>
