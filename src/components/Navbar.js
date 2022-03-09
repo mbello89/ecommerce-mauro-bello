@@ -1,6 +1,6 @@
 import React from 'react';
 import {Navbar,NavDropdown,Nav,Container} from 'react-bootstrap';
-// import  logoVagon from './assets/img/logoVagon.jpg';
+import logo from '../assets/img/logoVagon.png';
 
 function Bar() {
     return (
@@ -9,9 +9,9 @@ function Bar() {
             <Navbar.Brand href="#home">
                 <img
                 alt=""
-                src="/logo.scv"
-                width="30"
-                height="30"
+                src={logo}
+                width="45"
+                height="45"
                 className="d-inline-block align-top"
                 />{' '}
             </Navbar.Brand>
