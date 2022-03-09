@@ -1,6 +1,9 @@
 import React from 'react';
 import {Navbar,NavDropdown,Nav,Container} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../assets/img/logoVagon.png';
+// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+
 
 function Bar() {
     return (
@@ -18,7 +21,7 @@ function Bar() {
             <Navbar.Brand href="#home">Un Vagon de Ideas</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />                
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto">
+                <Nav className="me-auto container justify-content-end">
                     <Nav.Link href="#home">Home</Nav.Link>
                     <Nav.Link href="#link">Nosotros</Nav.Link>
                     <NavDropdown title="Productos" id="basic-nav-dropdown">
