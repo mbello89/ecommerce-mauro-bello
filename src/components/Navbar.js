@@ -2,16 +2,16 @@ import React from 'react';
 import {Navbar,NavDropdown,Nav,Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../assets/img/logoVagon.png';
-import {FaShoppingCart} from 'react-icons/fa';
+import CartWidget from './CartWidget';
 
 
-function Bar() {
+function Navbarr() {
     return (
         <Navbar bg="light" expand="md">
             <Container>
             <Navbar.Brand href="#home">
                 <img
-                alt=""
+                alt="Logo"
                 src={logo}
                 width="45"
                 height="45"
@@ -30,7 +30,7 @@ function Bar() {
                         <NavDropdown.Item href="#action/3.3">Kitchen</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="#home">
-                        <FaShoppingCart size={22}/>
+                        <CartWidget/>
                     </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
@@ -39,4 +39,4 @@ function Bar() {
     );
 }
 
-export default Bar;
+export default Navbarr;
