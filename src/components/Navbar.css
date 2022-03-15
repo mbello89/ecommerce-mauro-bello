@@ -1,12 +1,10 @@
 .NavbarItems {
-    background: rgb(161, 152, 245);
-    height: 80px;
-   
+    background: rgb(211, 181, 214); 
     font-size: 1.2rem;
 }
 
 .nav-links:hover {
-    background-color: #b5b9f1;
+    background-color: #b596bd;
     border-radius: 4px;
     transition: all 0.2s ease-out;
 }
