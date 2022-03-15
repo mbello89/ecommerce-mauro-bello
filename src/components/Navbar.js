@@ -19,9 +19,9 @@ function Navbarr() {
                     className="d-inline-block align-top"
                     />
                 </Navbar.Brand>
-                <Navbar.Brand href="#home">Un Vagon de Ideas</Navbar.Brand>
+                <Navbar.Brand className='h1-size' href="#home">Un Vagon de Ideas</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>                
-                <Navbar.Collapse id="basic-navbar-nav" className='mt-0'>
+                <Navbar.Collapse id="basic-navbar-nav" className=''>
                     <Nav className=" container justify-content-end">
                         <Nav.Link className='nav-links' href="#home">Home</Nav.Link>
                         <Nav.Link className='nav-links' href="#link">Nosotros</Nav.Link>
