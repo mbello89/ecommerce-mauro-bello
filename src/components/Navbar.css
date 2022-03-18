@@ -1,17 +1,43 @@
-.NavbarItems {
-    background: rgb(247, 217, 250); 
+.Nav {
+    display: flex;
+    background-color: rgb(161, 151, 253);
+    padding: 1rem;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+.Logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.Nav>h1{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.NavItems {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #fff;
     font-size: 1.1rem;
-    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 .nav-links:hover {
-    background-color: #d6b4df;
+    background-color: #8c94ff;
     border-radius: 4px;
-    transition: all 0.2s ease-out;
 }
 
-.h1-size {
-    font-size: 22px;
-    text-decoration: none;
-    font-weight: bold;
+.Badge {
+    color: #fff;
+    margin: 0px 5px;
 }
