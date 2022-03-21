@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
 import './ItemCounter.css'
 
-const ItemCounter = ({ counter, initialValue, stock }) => {
+const ItemCounter = ({ stock }) => {
 
-const [contador, setContador] = useState(initialValue)
+const [contador, setContador] = useState(0)
 
-    const sumar = () => {
+    const addToCounter = () => {
         if ( contador < stock){
             setContador( contador + 1)
         }
     }  
     
-    const restar = () => {
+    const substractToCounter = () => {
         if( contador > 0) {
             setContador( contador - 1)
         }    
@@ -25,11 +25,10 @@ const [contador, setContador] = useState(initialValue)
     }
   return (
     <div className='container'>
-        <h3> {counter} </h3>
         <div className='buttons'>
-            <button className='sumrest' onClick={restar}>-</button>
+            <button className='sumrest' onClick={substractToCounter}>-</button>
             <span>{contador}</span>
-            <button className='sumrest' onClick={sumar}>+</button>
+            <button className='sumrest' onClick={addToCounter}>+</button>
             <button className='onAdd' onClick={add}>Add Cart</button>
         </div>
     </div>
