@@ -17,16 +17,12 @@ const [contador, setContador] = useState(initialValue)
         }    
     }
 
-const [agregar, setAgregar] = useState(contador)
     const add = () => {
-        if (agregar > 0) {
-            
-        console.log(contador, 'productos agregados al carrito')
-    } else { 
-        console.log('No hay stock')
+        if(contador > 0) {
+        console.log (contador,"Productos agregados")}
+        else{
+        console.log ('Debes agregar un producto en cantidad')}
     }
-}
-
   return (
     <div className='container'>
         <h3> {counter} </h3>
