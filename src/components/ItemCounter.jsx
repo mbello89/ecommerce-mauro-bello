@@ -25,7 +25,7 @@ const [contador, setContador] = useState(0)
     }
   return (
     <div className='container'>
-        <div><h2>Selecione cantidad</h2></div>
+        <h2>Selecione cantidad</h2>
         <div className='buttons'>
             <button className='sumrest' onClick={substractToCounter}>-</button>
             <span>{contador}</span>
