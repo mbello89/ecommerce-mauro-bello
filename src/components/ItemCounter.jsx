@@ -21,7 +21,7 @@ const [contador, setContador] = useState(0)
         if(contador > 0) {
         console.log (contador,"Productos agregados")}
         else{
-        console.log ('Error. Debe seleccionar una cantidad mayor a 0')}
+        alert ('Error. Debe seleccionar una cantidad mayor a 0')}
     }
   return (
     <div className='container'>
