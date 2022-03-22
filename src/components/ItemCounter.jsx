@@ -25,12 +25,20 @@ const [contador, setContador] = useState(0)
     }
   return (
     <div className='container'>
-        <h2>Selecione cantidad</h2>
-        <div className='buttons'>
-            <button className='sumrest' onClick={substractToCounter}>-</button>
-            <span>{contador}</span>
-            <button className='sumrest' onClick={addToCounter}>+</button>
-            <button className='onAdd' onClick={add}>Agregar al carrito</button>
+        <div className="card">
+            <div className="card-header">
+                Titulo
+            </div>
+            <div className="card-body">
+                <img src="" alt="" />
+                Descripcion
+            </div>
+            <div className="card-footer">
+                <button className='button' onClick={substractToCounter}>-</button>
+                <span className='counter'>{contador}</span>
+                <button className='button' onClick={addToCounter}>+</button>
+                <button className='add-cart' onClick={add}>Agregar al carrito</button>
+            </div>    
         </div>
     </div>
   )
