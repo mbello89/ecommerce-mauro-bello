@@ -1,8 +1,8 @@
 
 import { ShoppingCartOutlined } from '@mui/icons-material';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
-import { NavbarItems } from './NavbarItems';
 
 
 function Navbar() {
@@ -12,20 +12,23 @@ function Navbar() {
             <h1>
                 Un Vagon de Ideas
             </h1>
-            <ul className='NavItems'>
-                {NavbarItems.map((item,index) => {
-                    return (    
-                        <li key={index}>
-                            <a className={item.cName} href={item.url}>
-                                {item.tittle}
-                            </a>
-                        </li>
-                    )
-                })}
-                <div>
-                    <ShoppingCartOutlined className='Badge'/>
-                </div>
-            </ul>    
+            
+                <Link to='/' className='nav-links'>
+                    Home
+                </Link>
+                <Link to='/nosotras' className='nav-links'>
+                    Nosotras
+                </Link>
+                <Link to='/' className='nav-links'>
+                    Productos
+                </Link>
+                <Link to='/contacto' className='nav-links'>
+                    Contactanos
+                </Link>
+                  
+            <div>
+                <ShoppingCartOutlined className='Badge'/>
+            </div>
         </nav>
     )
 }

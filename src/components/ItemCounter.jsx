@@ -28,7 +28,7 @@ const [contador, setContador] = useState(0)
     <div className='container'>
         <div className="card">
             <div className="card-header">
-                
+                {producto.tittle}
             </div>
             <div className="card-body">
                 <img src={producto.img} alt="" />

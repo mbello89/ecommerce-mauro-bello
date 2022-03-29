@@ -4,6 +4,7 @@ import ItemCategories from './components/ItemCategories';
 import Contacto from './components/Contacto/Contacto'
 import Nosotras from './components/Nosotras/Nosotras'
 import Navbar from './components/Navbar/Navbar';
+import ItemList from './components/ItemList';
 
 
 function App() {
@@ -15,11 +16,14 @@ function App() {
       <BrowserRouter>
 
           <Navbar/>
+          
 
           <Routes>
             <Route path='/' element={ <ItemCategories/> }/>
             <Route path='/Contacto' element={ <Contacto/> }/>
             <Route path='/Nosotras' element={ <Nosotras/> }/>
+
+            <Route path='/category/:categoryID' element={ <ItemList/> }/>
 
             <Route path='*' element={ <Navigate to='/'/> }/>
           </Routes>
