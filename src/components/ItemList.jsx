@@ -6,6 +6,7 @@ import ItemCounter from './ItemCounter'
 const ItemList = () => {
 
   const [listProductos, setListaProductos] = useState ([])
+  const [loading, setLoading] = useState(true)
 
   //array de productos
   const productos = [
@@ -25,7 +26,7 @@ const ItemList = () => {
     if (condition) {
       setTimeout(() => {
         resolve(productos)
-      }, 2000);
+      }, 1000);
     } else {
       reject ('Error. Algo salio mal')
     }
@@ -34,11 +35,13 @@ const ItemList = () => {
   useEffect (() => {
     obtenerProductos
     .then ((res) => setListaProductos(res))
+    .catch((error) => console.log(error))
+    .finally(() => setLoading(false))
   },[])
 
   return (
     <div>
-        {listProductos.map((producto) => <ItemCounter producto={producto} key={producto.id} stock={5}/>)}
+        {loading ? <p>Loading...</p> : listProductos.map((producto) => <ItemCounter producto={producto} key={producto.id} stock={5}/>)}
     </div>
   )
 }

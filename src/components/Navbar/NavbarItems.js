@@ -1,22 +1,22 @@
 export const NavbarItems = [
     {
         tittle: 'Home',
-        url: '#',
+        url: '/',
         cName: 'nav-links'
     },
     {
         tittle: 'Nosotras',
-        url: '#',
+        url: '/Nosotras',
         cName: 'nav-links'
     },
     {
         tittle: 'Productos',
-        url: '#',
+        url: '/',
         cName: 'nav-links'
     },
     {
         tittle: 'Contactanos',
-        url: '#',
+        url: '/Contacto',
         cName: 'nav-links'
     },
     {
